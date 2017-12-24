@@ -1,0 +1,28 @@
+.showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    color: $white-color;
+    height: 70vh;
+
+    background-image: url(../../img/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    
+    h1{
+        color:$blue-color;
+        font-size:3rem;
+        margin-bottom: 3%;
+    }
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+    }
+    .roundtrip{
+       @include roundtrip();        
+    }
+}

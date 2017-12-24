@@ -1,0 +1,73 @@
+nav{   
+    background: $dark-color;
+    color: $white-color;
+    position: fixed;
+    width: 100%;
+    transition: top ease-in-out 600ms;
+    // using flex for styling the content
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 12vh;
+    align-items: center;
+    
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
+
+    .brand{
+        flex-grow: 1; 
+        text-align: right;
+        padding-right: 7px;            
+    }
+    .brand-text{
+        flex-grow: 1;
+        text-align: left;
+        color: $blue-color;
+        font-size: 1.3rem;
+    }
+    .left{
+        flex-grow: 4;
+        text-align: left;
+    }
+    .right{
+        flex-grow: 2;
+        text-align: left;
+    }
+    .search-bar{
+        flex-grow: 1;
+        input{
+            height: 5vh;
+            width: 70%;
+            font-size: 1rem;
+            padding-left: 10px;
+            background: $dark-color;
+            border-radius: 3px;
+            border:none;
+            color: $white-color;
+            outline: none;
+            &:focus{
+                background: lighten($dark-color, 5%);
+            }
+        }
+        i{
+            font-size: 1.1rem;
+            margin-right: 4px;
+        }
+    }
+
+    ul{
+        li{
+            padding-right: 4%;
+            a{
+                color: $white-color;
+                transition: color ease 300ms; 
+                &:hover{
+                    color: darken($blue-color, 15%);
+                }
+            }
+        }
+    }
+}

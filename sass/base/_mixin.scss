@@ -1,0 +1,43 @@
+@mixin roundtrip() {
+    font-size: 1.3rem;
+      ul {
+        li {
+            display: inline-block;
+            margin-right: 3%;
+            &:first-child {
+                background: $blue-color;
+                padding: 1.5% 3%;
+                border-radius: 3px;
+                transition: background ease 300ms;
+                &:hover {
+                    background: $white-color;
+                }
+                a {
+                    color: $dark-color;
+                }
+            }
+            &:last-child {
+                a {
+                    color: $blue-color;
+                    transition: color ease 300ms;
+                    &:hover {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin roundtrip_mobile() {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        li {
+            margin: 3% 0;
+        }
+    }
+}
